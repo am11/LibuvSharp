@@ -1,0 +1,13 @@
+init:
+  - git config --global core.autocrlf input
+
+before_build:
+  - nuget restore
+
+build:
+  project: LibuvSharp.sln
+
+configuration:
+  - Release 
+
+platform: Any CPU
